@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklld</title>
     <link rel="stylesheet" href="./styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="text-pri">
     <!-- content wrapper -->
     <div>
         <div class="flex flex-col h-screen font-body sm:container mx-auto">
@@ -38,7 +42,7 @@
                     </ul>
                 </nav>
             </div>
-            <main class="justify-center h-full bg-gray-400">
+            <main class="justify-center h-full">
                 <div class="hero-section text-center my-48">
                     <h1 class="text-pri font-head font-extrabold text-6xl">Preparing to launch</h1>
                     <h3 class="text-tert text-2xl">A single platform for your personal and professional growth</h3>
@@ -53,20 +57,144 @@
                 </div>
             </main>
         </div>
-        <div class="flex flex-row flex-wrap container mx-auto">
-            <div class="w-full border-black border-2">
+        <!-- What do we do -->
+        <div class="container mx-auto mb-24">
+            <div class="w-full">
                 <h1 class="text-5xl text-center font-head font-extrabold text-pri my-16">
                     We have a lot to offer.
                 </h1>
             </div>
-            <div class="w-1/2 h-24 border-black border-2">
-                <img src="" alt="">
+            <!-- Courses Section -->
+            <div class="flex" id="courses">
+                <div class="w-1/2">
+                    <img style="width: 32rem;" class="ml-8 -mt-6" src="./static/images/courses.png" alt="courses-image">
+                </div>
+                <div class="w-1/2 pl-12 pr-6 py-20">
+                    <div class="top border-l-8 border-sec pl-4">
+                        <h2 class="text-4xl font-head font-extrabold">Self Improvement Courses</h2>
+                        <h6 class="text-xl font-body italic text-tert">Hand-picked content to suit your needs</h6>
+                    </div>
+                    <div class="middle my-10 font-body text-xl leading-8">
+                        <p>Do you want to boost your social confidence, or
+                            you want learn how to negotiate at the workplace, or you want to learn the secrets of
+                            achieving
+                            happiness? We've got you covered.</p>
+                    </div>
+                    <div class="bottom flex justify-items-auto">
+                        <span
+                            class="mr-5 w-64 pt-3 pb-4 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center text-xl border-l-4 border-tert">Personal
+                            Development</span>
+                        <span
+                            class="mr-5 w-64 pt-3 pb-4 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center text-xl border-l-4 border-tert">Corporate
+                            Soft
+                            Skill
+                            Training</span>
+                        <span
+                            class="mr-5 w-64 pt-3 pb-4 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center text-xl border-l-4 border-tert">Growth
+                            Counselling</span>
+                    </div>
+                </div>
             </div>
-            <div class="w-1/2 h-24 border-black border-2"></div>
-            <div class="w-1/2 h-24 border-black border-2"></div>
-            <div class="w-1/2 h-24 border-black border-2"></div>
-            <div class="w-1/2 h-24 border-black border-2"></div>
-            <div class="w-1/2 h-24 border-black border-2"></div>
+            <!-- Courses Section End -->
+
+            <!-- Counselling Section -->
+            <div class="flex">
+                <div class="w-1/2 pl-12 pr-8 py-20">
+                    <div class="top border-l-8 border-sec pl-4">
+                        <h2 class="text-4xl font-head font-extrabold">Therapy and Counselling</h2>
+                        <h6 class="text-xl font-body italic text-tert">Simple, effective and reliable</h6>
+                    </div>
+                    <div class="middle my-10 font-body text-xl leading-8">
+                        <p>We know that everyone is unique and has different requirements. We have partnered with the
+                            best psychologists, therapists and counselors in order to cater to your specific needs.
+                        </p>
+                    </div>
+                    <div class="bottom flex justify-items-auto">
+                        <span
+                            class="mr-20 w-full pt-3 pb-4 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center text-xl border-l-4 border-tert">Engage
+                            with them directly on our platform</span>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <img class="ml-4 -mt-12 -mb-10" src="./static/images/counselling.png" alt="counselling-image">
+                </div>
+            </div>
+            <!-- Counselling Section End -->
+
+            <!-- Community Section -->
+            <div class="flex" id="courses">
+                <div class="w-1/2">
+                    <img style="width: 37rem;" class="ml-3 -mt-10" src="./static/images/community.png"
+                        alt="community-image">
+                </div>
+                <div class="w-1/2 pl-12 pr-6 py-20">
+                    <div class="top border-l-8 border-sec pl-4">
+                        <h2 class="text-4xl font-head font-extrabold">Sklld Community</h2>
+                        <h6 class="text-xl font-body italic text-tert">You're not alone in this :)</h6>
+                    </div>
+                    <div class="middle my-10 font-body text-xl leading-8">
+                        <p>We believe that fields of personal development and life skills are best explored with a tight
+                            knit community. Skilld community connects you to people who are in the same boat</p>
+                    </div>
+                    <div class="bottom flex justify-items-auto">
+                        <span
+                            class="mr-5 w-64 pt-3 pb-4 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center text-xl border-l-4 border-tert">Register
+                            to access</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Community Section End -->
+        </div>
+        <!-- What do we do ends -->
+
+        <!-- It's all about the people -->
+        <div class="container mx-auto mb-24 -mt-8">
+            <div class="w-full">
+                <h1 class="text-5xl text-center font-head font-extrabold text-pri my-16">
+                    It's all about the people.
+                </h1>
+            </div>
+            <div class="flex">
+                <div class="w-1/2 text-center">
+                    <div class="contact-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="contact-info">
+                        <div class="text-tert text-lg pb-1">Co-founder</div>
+                        <div class="text-pri text-2xl font-bold">Aditya Shrivastav</div>
+                        <div class="my-3">
+                            <span><i class="fab fa-linkedin-in text-tert fa-lg mx-1"></i></span>
+                            <span><i class="fab fa-instagram text-tert fa-lg mx-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 text-center">
+                    <div class="contact-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="contact-info">
+                        <div class="text-tert text-lg pb-1">Co-founder</div>
+                        <div class="text-pri text-2xl font-bold">Advait Mulay</div>
+                        <div class="my-3">
+                            <span><i class="fab fa-linkedin-in text-tert fa-lg mx-1"></i></span>
+                            <span><i class="fab fa-instagram text-tert fa-lg mx-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- It's all about the people Ends -->
+
+        <div style="height: 19rem;" class="bg-gradient-to-b from-sec to-tert">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,32L60,53.3C120,75,240,117,360,128C480,139,600,117,720,106.7C840,96,960,96,1080,106.7C1200,117,1320,139,1380,149.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div>
+                <div class="font-head font-bold text-2xl"></div>
+                <div class="">Copyright <i class="far fa-copyright"></i> 2020 Sklld, Inc. All rights reserved.</div>
+            </div>
         </div>
     </div>
 </body>
