@@ -12,14 +12,14 @@
         crossorigin="anonymous" />
 </head>
 
-<body class="text-pri">
+<body class="text-pri overflow-x-hidden">
     <!-- content wrapper -->
     <div>
         <div class="flex flex-col h-screen font-body sm:container mx-auto">
             <div>
                 <nav class="flex py-4">
                     <div>
-                        <h2 class="font-head font-bold text-3xl">
+                        <h2 class="font-head font-extrabold text-3xl">
                             <a href="/">Skl!d</a>
                         </h2>
                     </div>
@@ -67,7 +67,7 @@
             <!-- Courses Section -->
             <div class="flex" id="courses">
                 <div class="w-1/2">
-                    <img style="width: 32rem;" class="ml-8 -mt-6" src="./public/static/images/courses.png"
+                    <img style="width: 32rem;" class="ml-8" src="./public/static/images/courses-1.png"
                         alt="courses-image">
                 </div>
                 <div class="w-1/2 pl-12 pr-6 py-20">
@@ -99,7 +99,7 @@
             <!-- Courses Section End -->
 
             <!-- Counselling Section -->
-            <div class="flex">
+            <div class="flex mb-8" id="counselling">
                 <div class="w-1/2 pl-12 pr-8 py-20">
                     <div class="top border-l-8 border-sec pl-4">
                         <h2 class="text-4xl font-head font-extrabold">Therapy and Counselling</h2>
@@ -117,14 +117,13 @@
                     </div>
                 </div>
                 <div class="w-1/2">
-                    <img class="ml-4 -mt-12 -mb-10" src="./public/static/images/counselling.png"
-                        alt="counselling-image">
+                    <img class="my-16" src="./public/static/images/counselling-1.png" alt="counselling-image">
                 </div>
             </div>
             <!-- Counselling Section End -->
 
             <!-- Community Section -->
-            <div class="flex" id="courses">
+            <div class="flex" id="community">
                 <div class="w-1/2">
                     <img style="width: 37rem;" class="ml-3 -mt-10" src="./public/static/images/community.png"
                         alt="community-image">
@@ -150,18 +149,18 @@
         <!-- What do we do ends -->
 
         <!-- It's all about the people -->
-        <div class="container mx-auto mb-24 -mt-8">
-            <div class="w-full">
+        <div class="container mx-auto mb-32">
+            <div>
                 <h1 class="text-5xl text-center font-head font-extrabold text-pri my-16">
                     It's all about the people.
                 </h1>
             </div>
             <div class="flex">
                 <div class="w-1/2 text-center">
-                    <div class="contact-img">
-                        <img src="" alt="">
+                    <div class="founders-image">
+                        <img src="" alt="aditya-image">
                     </div>
-                    <div class="contact-info">
+                    <div class="founders-social-media">
                         <div class="text-tert text-lg pb-1">Co-founder</div>
                         <div class="text-pri text-2xl font-bold">Aditya Shrivastav</div>
                         <div class="my-3">
@@ -171,10 +170,10 @@
                     </div>
                 </div>
                 <div class="w-1/2 text-center">
-                    <div class="contact-img">
-                        <img src="" alt="">
+                    <div class="founders-image">
+                        <img src="" alt="advait-image">
                     </div>
-                    <div class="contact-info">
+                    <div class="founders-social-media">
                         <div class="text-tert text-lg pb-1">Co-founder</div>
                         <div class="text-pri text-2xl font-bold">Advait Mulay</div>
                         <div class="my-3">
@@ -187,17 +186,73 @@
         </div>
         <!-- It's all about the people Ends -->
 
-        <div style="height: 19rem;" class="bg-gradient-to-b from-sec to-tert">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <!-- Drop us a line -->
+        <div class="container mx-auto mb-20">
+            <div class="w-full">
+                <h1 class="text-5xl text-center font-head font-extrabold text-pri my-16">
+                    Drop us a line.
+                </h1>
+            </div>
+            <div class="flex">
+                <div class="w-1/2 border-r-2 border-tert">
+                    <div class="contact-info text-center">
+                        <div class="text-pri text-2xl font-bold mb-6">Aditya Shrivastav</div>
+                        <div class="my-3 text-left w-64 mx-auto">
+                            <div>
+                                <span><i class="far fa-envelope text-tert fa-lg mr-6 mb-4"></i></span>
+                                <span class="font-body text-lg leading-8">shriadishri@gmail.com</span>
+                            </div>
+                            <div>
+                                <span><i class="fas fa-phone-alt text-tert fa-lg mr-6"></i></span>
+                                <span class="font-body text-lg leading-8">+91-789-846-6420</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="contact-info text-center">
+                        <div class="text-pri text-2xl font-bold mb-6">Advait Mulay</div>
+                        <div class="my-3 text-left w-64 mx-auto">
+                            <div>
+                                <span><i class="far fa-envelope text-tert fa-lg mr-6 mb-4"></i></span>
+                                <span class="font-body text-lg leading-8">adwaitmule@gmail.com</span>
+                            </div>
+                            <div>
+                                <span><i class="fas fa-phone-alt text-tert fa-lg mr-6"></i></span>
+                                <span class="font-body text-lg leading-8">+91-869-840-6832</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Drop us a line Ends -->
+
+        <!-- Footer -->
+        <div style="height: 16rem;" class="bg-gradient-to-br from-sec to-tert text-white">
+            <!-- <svg class="-mb-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ffffff" fill-opacity="1"
                     d="M0,32L60,53.3C120,75,240,117,360,128C480,139,600,117,720,106.7C840,96,960,96,1080,106.7C1200,117,1320,139,1380,149.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
                 </path>
+            </svg> -->
+            <!-- <svg class="-mb-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,128L80,138.7C160,149,320,171,480,165.3C640,160,800,128,960,117.3C1120,107,1280,117,1360,122.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg> -->
+            <svg class="-mb-40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,64C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
             </svg>
-            <div>
-                <div class="font-head font-bold text-2xl">Sklld</div>
-                <div class="">Copyright <i class="far fa-copyright"></i> 2020 Sklld, Inc. All rights reserved.</div>
+            <div class="flex justify-between px-12">
+                <div class="font-head font-extrabold text-3xl">Sk!ld</div>
+                <div class="text-lg">Copyright <i class="far fa-copyright"></i> 2020 Sklld, Inc. All rights reserved.
+                </div>
             </div>
         </div>
+        <!-- Footer Ends -->
+
     </div>
 </body>
 
