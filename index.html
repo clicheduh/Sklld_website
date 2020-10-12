@@ -15,50 +15,44 @@
 <body class="text-pri overflow-x-hidden">
     <!-- content wrapper -->
     <div>
-        <div class="flex flex-col h-screen font-body sm:container mx-auto">
-            <div>
-                <nav class="flex py-4">
-                    <div>
-                        <h2 class="font-head font-extrabold text-3xl">
-                            <a href="/">Skl!d</a>
-                        </h2>
-                    </div>
-                    <ul class="contents justify-self-end">
-                        <li>
-                            <a href="">
-                                <span>About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Team</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span>Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <main class="justify-center h-full">
-                <div class="hero-section text-center my-48">
+        <div class="h-screen font-body sm:container mx-auto">
+            <nav class="flex justify-between py-5">
+                <div class="flex-grow-0">
+                    <h2 class="font-head font-extrabold text-3xl mr-6">
+                        <a href="/">Skl!d</a>
+                    </h2>
+                </div>
+                <ul class="flex flex-row flex-grow items-center justify-end">
+                    <li class="ml-10 font-semibold">
+                        <a href="#team">
+                            <span>Team</span>
+                        </a>
+                    </li>
+                    <li class="ml-10 font-semibold bg-sec px-5 py-2 border-sec rounded-md cursor-pointer">
+                        <a href="#contact">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div class="justify-center h-full">
+                <div class="hero-section text-center my-40">
                     <h1 class="text-pri font-head font-extrabold text-6xl">Preparing to launch</h1>
                     <h3 class="text-tert text-2xl">A single platform for your personal and professional growth</h3>
-                    <div class="hero-buttons mt-10">
-                        <button
+                    <div class="hero-buttons mt-12">
+                        <a href="#about"
                             class="bg-sec mx-2 px-3 py-2 border-sec border-2 font-semibold rounded-md cursor-pointer">What
-                            do we do?</button>
-                        <button
+                            do we do?</a>
+                        <a href="#contact"
                             class="bg-white mx-2 px-6 py-2 border-pri border-2 font-semibold rounded-md cursor-pointer">Get
-                            in touch</button>
+                            in touch</a>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
         <!-- What do we do -->
-        <div class="container mx-auto mb-24">
+        <div class="container mx-auto pt-1 mb-10" id="about">
             <div class="w-full">
                 <h1 class="text-5xl text-center font-head font-extrabold text-pri my-16">
                     We have a lot to offer.
@@ -99,8 +93,8 @@
             <!-- Courses Section End -->
 
             <!-- Counselling Section -->
-            <div class="flex mb-8" id="counselling">
-                <div class="w-1/2 pl-12 pr-8 py-20">
+            <div class="flex mb-10" id="counselling">
+                <div class="w-1/2 pl-12 pr-8 pt-24">
                     <div class="top border-l-8 border-sec pl-4">
                         <h2 class="text-4xl font-head font-extrabold">Therapy and Counselling</h2>
                         <h6 class="text-xl font-body italic text-tert">Simple, effective and reliable</h6>
@@ -128,7 +122,7 @@
                     <img style="width: 37rem;" class="ml-3 -mt-10" src="./public/static/images/community.png"
                         alt="community-image">
                 </div>
-                <div class="w-1/2 pl-12 pr-6 py-20">
+                <div class="w-1/2 pl-12 pr-6 pt-24">
                     <div class="top border-l-8 border-sec pl-4">
                         <h2 class="text-4xl font-head font-extrabold">Sklld Community</h2>
                         <h6 class="text-xl font-body italic text-tert">You're not alone in this :)</h6>
@@ -149,7 +143,7 @@
         <!-- What do we do ends -->
 
         <!-- It's all about the people -->
-        <div class="container mx-auto mb-32">
+        <div class="container mx-auto pt-1" id="team">
             <div>
                 <h1 class="text-5xl text-center font-head font-extrabold text-pri my-16">
                     It's all about the people.
@@ -187,7 +181,7 @@
         <!-- It's all about the people Ends -->
 
         <!-- Drop us a line -->
-        <div class="container mx-auto mb-20">
+        <div class="container mx-auto mt-32 mb-20" id="contact">
             <div class="w-full">
                 <h1 class="text-5xl text-center font-head font-extrabold text-pri my-16">
                     Drop us a line.
@@ -230,16 +224,6 @@
 
         <!-- Footer -->
         <div style="height: 16rem;" class="bg-gradient-to-br from-sec to-tert text-white">
-            <!-- <svg class="-mb-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#ffffff" fill-opacity="1"
-                    d="M0,32L60,53.3C120,75,240,117,360,128C480,139,600,117,720,106.7C840,96,960,96,1080,106.7C1200,117,1320,139,1380,149.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-                </path>
-            </svg> -->
-            <!-- <svg class="-mb-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#ffffff" fill-opacity="1"
-                    d="M0,128L80,138.7C160,149,320,171,480,165.3C640,160,800,128,960,117.3C1120,107,1280,117,1360,122.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-                </path>
-            </svg> -->
             <svg class="-mb-40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ffffff" fill-opacity="1"
                     d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,64C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
