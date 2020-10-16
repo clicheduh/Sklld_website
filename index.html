@@ -25,27 +25,29 @@
     <!-- content wrapper -->
     <div>
         <div id="top-section" class="h-screen font-body container mx-auto">
-            <nav class="flex justify-between py-5 xl:mx-5 sm:mx-10 mx-5 mr-6">
-                <div class="flex flex-grow items-center justify-between">
+            <nav class="flex justify-between items-center py-5 xl:mx-5 sm:mx-10 mx-5 mr-6">
+                <div class="flex items-center justify-between mb-3 sm:mb-0">
                     <div class="flex-grow-0">
                         <h2 class="font-head font-extrabold text-3xl mr-6">
                             <a href="/">Sk!ld</a>
                         </h2>
                     </div>
-                    <div>
+                    <div id="burger" class="block sm:hidden">
                         <button class="focus:outline-none">
                             <i class="fas fa-bars fa-lg text-pri"></i>
                         </button>
                     </div>
                 </div>
-                <div class="hidden sm:block">
-                    <ul class="flex flex-row flex-grow items-center justify-end">
-                        <li class="ml-10 font-semibold">
+                <div>
+                    <ul id="menu"
+                        class="flex flex-col sm:block bg-gray-300 sm:bg-white sm:flex-row items-center justify-start sm:justify-end">
+                        <li class="w-full sm:w-auto px-3 sm:ml-10 font-semibold py-2 hover:bg-gray-400 cursor-pointer">
                             <a href="#team">
                                 <span>Team</span>
                             </a>
                         </li>
-                        <li class="ml-10 font-semibold bg-sec px-5 py-2 border-sec rounded-md cursor-pointer">
+                        <li
+                            class="w-full sm:w-auto px-3 sm:ml-10 font-semibold py-2 hover:bg-gray-400 sm:px-5 sm:py-2 sm:bg-sec sm:border-sec sm:rounded-md cursor-pointer">
                             <a href="#contact">
                                 <span>Contact Us</span>
                             </a>
@@ -268,8 +270,8 @@
                 </path>
             </svg>
             <div class="flex flex-wrap justify-between sm:px-12">
-                <div class="font-head font-extrabold text-3xl w-full text-center mb-3 sm:mb-0">Sk!ld</div>
-                <div class="sm:text-lg font-body px-5 sm:px-0 sm:pt-2 md:pt-0 w-full text-center">Copyright <i
+                <div class="font-head font-extrabold text-3xl w-full sm:w-auto text-center mb-3 sm:mb-0">Sk!ld</div>
+                <div class="sm:text-lg font-body px-5 sm:px-0 sm:pt-2 md:pt-0 w-full sm:w-auto text-center">Copyright <i
                         class="far fa-copyright"></i> 2020
                     Sklld,
                     Inc. All
@@ -281,6 +283,8 @@
         <!-- Footer Ends -->
 
     </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
