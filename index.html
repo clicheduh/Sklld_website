@@ -24,14 +24,21 @@
 <body class="text-pri overflow-x-hidden">
     <!-- content wrapper -->
     <div>
-        <div id="top-section" class="h-screen">
-            <div id="top-section" class="h-screen font-body sm:container mx-auto">
-                <nav class="flex justify-between py-5 xl:mx-5 sm:mx-10">
+        <div id="top-section" class="h-screen font-body container mx-auto">
+            <nav class="flex justify-between py-5 xl:mx-5 sm:mx-10 mx-5 mr-6">
+                <div class="flex flex-grow items-center justify-between">
                     <div class="flex-grow-0">
                         <h2 class="font-head font-extrabold text-3xl mr-6">
                             <a href="/">Sk!ld</a>
                         </h2>
                     </div>
+                    <div>
+                        <button class="focus:outline-none">
+                            <i class="fas fa-bars fa-lg text-pri"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden sm:block">
                     <ul class="flex flex-row flex-grow items-center justify-end">
                         <li class="ml-10 font-semibold">
                             <a href="#team">
@@ -44,65 +51,69 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </div>
+            </nav>
 
-                <div class="justify-center h-full">
-                    <div class="hero-section text-center my-48">
-                        <h1 class="text-pri font-head font-extrabold lg:text-6xl sm:text-5xl">Preparing to
-                            launch</h1>
-                        <h3 class="text-tert lg:text-2xl sm:text-xl">A single platform for your personal and
-                            professional growth</h3>
-                        <div class="hero-buttons mt-12">
-                            <a href="#about"
-                                class="bg-sec mx-2 px-3 py-2 border-sec border-2 font-semibold rounded-md cursor-pointer">What
-                                do we do?</a>
-                            <a href="#contact"
-                                class="bg-white mx-2 px-6 py-2 border-pri border-2 font-semibold rounded-md cursor-pointer">Get
-                                in touch</a>
-                        </div>
+            <div class="justify-center h-full">
+                <div class="hero-section text-center my-48">
+                    <h1 class="text-pri font-head font-extrabold lg:text-6xl sm:text-5xl text-3xl">Preparing to
+                        launch</h1>
+                    <h3 class="text-tert lg:text-2xl sm:text-xl text-lg px-6 sm:px-0">A single platform for your
+                        personal and
+                        professional growth</h3>
+                    <div class="hero-buttons mt-12">
+                        <a href="#about"
+                            class="bg-sec mx-2 px-3 py-2 border-sec border-2 font-semibold rounded-md cursor-pointer">What
+                            do we do?</a>
+                        <a href="#contact"
+                            class="bg-white mx-2 px-6 py-2 border-pri border-2 font-semibold rounded-md cursor-pointer hidden sm:inline-block">Get
+                            in touch</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- What do we do -->
-        <div class="container mx-auto pt-1 md:mb-10 md:px-0" id="about">
+        <div class="container mx-auto sm:pt-1 md:mb-10 md:px-0" id="about">
             <div class="w-full">
-                <h1 class="lg:text-5xl sm:text-4xl text-center font-head font-extrabold text-pri my-16">
+                <h1
+                    class="lg:text-5xl sm:text-4xl text-2xl text-center font-head font-extrabold text-pri sm:my-16 my-12 pt-12 sm:pt-0">
                     We have a lot to offer.
                 </h1>
             </div>
+
             <!-- Courses Section -->
-            <div class="flex flex-wrap sm:mb-16 lg:mb-0" id="courses">
-                <div class="lg:w-1/2 md:w-full">
-                    <img class="xl:ml-8 lg:ml-2 sm:px-32 lg:px-8" src="./public/static/images/courses-1.png"
-                        alt="courses-image">
+            <div class="flex flex-wrap mb-12 sm:mb-16 lg:mb-0" id="courses">
+                <div class="lg:w-1/2 md:w-full mb-3 sm:mb-0">
+                    <img class="xl:ml-8 lg:ml-2 lg:px-8 sm:px-32 px-8 pb-4 sm:pb-0"
+                        src="./public/static/images/courses-1.png" alt="courses-image">
                 </div>
                 <div
-                    class="lg:w-1/2 md:w-full md:mt-10 lg:pl-12 lg:pr-6 sm:px-12 lg:px-0 xl:py-20 lg:py-2 sm:pt-8 md:pt-0">
+                    class="lg:w-1/2 md:w-full md:mt-10 px-8 lg:pl-12 lg:pr-6 sm:px-12 lg:px-0 xl:py-20 lg:py-2 sm:pt-8 md:pt-0">
                     <div class="top border-l-8 border-sec pl-4 md:inline-block">
-                        <h2 class="xl:text-4xl lg:text-3xl sm:text-2xl font-head font-extrabold">Self Improvement
+                        <h2 class="xl:text-4xl lg:text-3xl sm:text-2xl text-xl font-head font-extrabold">Self
+                            Improvement
                             Courses</h2>
-                        <h6 class="lg:text-xl sm:text-lg font-body italic text-tert">Hand-picked
+                        <h6 class="lg:text-xl sm:text-lg hidden sm:block font-body italic text-tert">Hand-picked
                             content to suit your needs</h6>
                     </div>
-                    <div class="middle lg:my-10 sm:my-6 font-body lg:text-xl sm:text-lg lg:leading-8 sm:leading-7">
+                    <div class="middle lg:my-10 sm:my-6 my-4 font-body lg:text-xl sm:text-lg lg:leading-8 sm:leading-7">
                         <p>Do you want to boost your social confidence, or
                             you want learn how to negotiate at the workplace, or you want to learn the secrets of
                             achieving
                             happiness? We've got you covered.</p>
                     </div>
-                    <div class="bottom grid gap-4 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-3">
+                    <div class="bottom grid gap-4 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-3 grid-cols-2">
                         <span
-                            class="sm:px-2 md:px-0 lg:px-2 lg:pt-3 lg:pb-4 sm:py-2 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Personal
+                            class="sm:px-2 md:px-0 lg:px-2 lg:pt-3 lg:pb-4 sm:py-2 pt-1 pb-2 leading-6 sm:leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Personal
                             Development</span>
                         <span
-                            class="sm:px-2 md:px-0 lg:px-2 lg:pt-3 lg:pb-4 sm:py-2 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Corporate
+                            class="sm:px-2 md:px-0 lg:px-2 lg:pt-3 lg:pb-4 sm:py-2 pt-1 pb-2 leading-6 sm:leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Corporate
                             Soft
                             Skill
                             Training</span>
                         <span
-                            class="sm:px-2 md:px-0 lg:px-2 lg:pt-3 lg:pb-4 sm:py-2 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Growth
+                            class="sm:px-2 md:px-0 lg:px-2 lg:pt-3 lg:pb-4 sm:py-2 pt-1 pb-2 leading-6 sm:leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Growth
                             Counselling</span>
                     </div>
                 </div>
@@ -110,49 +121,53 @@
             <!-- Courses Section End -->
 
             <!-- Counselling Section -->
-            <div class="flex flex-wrap-reverse sm:mb-20 lg:mb-0" id="counselling">
-                <div class="lg:w-1/2 md:w-full pl-12 pr-8 lg:pt-24 sm:pt-6 sm:px-12 lg:px-0">
+            <div class="flex flex-wrap-reverse mb-12 sm:mb-20 lg:mb-0" id="counselling">
+                <div class="lg:w-1/2 md:w-full px-8 lg:pt-24 sm:pt-6 sm:px-12 lg:px-0">
                     <div class="top border-l-8 border-sec pl-4">
-                        <h2 class="xl:text-4xl lg:text-3xl sm:text-2xl font-head font-extrabold">Therapy and Counselling
+                        <h2 class="xl:text-4xl lg:text-3xl sm:text-2xl text-xl font-head font-extrabold">Therapy and
+                            Counselling
                         </h2>
-                        <h6 class="lg:text-xl sm:text-lg font-body italic text-tert">Simple, effective and reliable</h6>
+                        <h6 class="lg:text-xl sm:text-lg hidden sm:block font-body italic text-tert">Simple, effective
+                            and reliable</h6>
                     </div>
-                    <div class="middle lg:my-10 sm:my-6 font-body lg:text-xl sm:text-lg lg:leading-8 sm:leading-7">
+                    <div class="middle lg:my-10 sm:my-6 my-4 font-body lg:text-xl sm:text-lg lg:leading-8 sm:leading-7">
                         <p>We know that everyone is unique and has different requirements. We have partnered with the
                             best psychologists, therapists and counselors in order to cater to your specific needs.
                         </p>
                     </div>
                     <div class="bottom grid grid-cols-1 xl:pr-6">
                         <span
-                            class="pt-3 pb-4 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Engage
+                            class="sm:pt-3 sm:pb-4 pt-2 pb-3 leading-6 sm:leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Engage
                             with them directly on our platform</span>
                     </div>
                 </div>
                 <div class="lg:w-1/2 md:w-full">
-                    <img class="xl:my-16 lg:mt-32 lg:mb-16 sm:px-12 lg:px-0 md:mb-0"
+                    <img class="xl:my-16 lg:mt-32 lg:mb-16 px-3 sm:px-12 pb-4 sm:pb-0 lg:px-0 md:mb-0"
                         src="./public/static/images/counselling-1.png" alt="counselling-image">
                 </div>
             </div>
             <!-- Counselling Section End -->
 
             <!-- Community Section -->
-            <div class="flex flex-wrap md:mb-16 sm:mb-8 lg:mb-0" id="community">
+            <div class="flex flex-wrap mb-12 sm:mb-8 md:mb-16 lg:mb-0" id="community">
                 <div class="lg:w-1/2 md:w-full">
-                    <img class="lg:ml-3 -mt-10 sm:px-20 lg:px-0" src="./public/static/images/community.png"
-                        alt="community-image">
+                    <img class="lg:ml-3 -mt-10 px-5 sm:px-20 lg:px-0 pb-4 sm:pb-0"
+                        src="./public/static/images/community.png" alt="community-image">
                 </div>
-                <div class="lg:w-1/2 md:w-full pl-12 pr-6 xl:pt-24 lg:pt-12 sm:px-12 lg:px-0">
+                <div class="lg:w-1/2 md:w-full px-8 xl:pt-24 lg:pt-12 sm:px-12 lg:px-0">
                     <div class="top border-l-8 border-sec pl-4">
-                        <h2 class="xl:text-4xl lg:text-3xl sm:text-2xl font-head font-extrabold">Sklld Community</h2>
-                        <h6 class="lg:text-xl sm:text-lg font-body italic text-tert">You're not alone in this :)</h6>
+                        <h2 class="xl:text-4xl lg:text-3xl sm:text-2xl text-xl font-head font-extrabold">Sklld Community
+                        </h2>
+                        <h6 class="lg:text-xl sm:text-lg hidden sm:block font-body italic text-tert">You're not alone in
+                            this :)</h6>
                     </div>
-                    <div class="middle lg:my-10 sm:my-6 font-body lg:text-xl sm:text-lg lg:leading-8 sm:leading-7">
+                    <div class="middle lg:my-10 sm:my-6 my-4 font-body lg:text-xl sm:text-lg lg:leading-8 sm:leading-7">
                         <p>We believe that fields of personal development and life skills are best explored with a tight
                             knit community. Skilld community connects you to people who are in the same boat</p>
                     </div>
                     <div class="bottom grid grid-cols-1">
                         <span
-                            class="lg:mr-5 pt-3 pb-4 leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Register
+                            class="lg:mr-5 sm:pt-3 sm:pb-4 pt-2 pb-3 leading-6 sm:leading-7 bg-gray-200 rounded-r-lg rounded-l-sm text-center sm:text-lg lg:text-xl border-l-4 border-tert">Register
                             to access</span>
                     </div>
                 </div>
@@ -162,33 +177,33 @@
         <!-- What do we do ends -->
 
         <!-- It's all about the people -->
-        <div class="container mx-auto lg:pt-1 md:pt-1 sm:pt-2" id="team">
+        <div class="container mx-auto lg:pt-1 md:pt-1 sm:pt-2 mb-12 sm:mb-0" id="team">
             <div>
-                <h1 class="lg:text-5xl sm:text-4xl text-center font-head font-extrabold text-pri my-16">
+                <h1 class="lg:text-5xl sm:text-4xl text-2xl text-center font-head font-extrabold text-pri my-16">
                     It's all about the people.
                 </h1>
             </div>
-            <div class="flex">
-                <div class="w-1/2 text-center">
+            <div class="flex flex-wrap">
+                <div class="sm:w-1/2 w-full text-center mb-6 sm:mb-0">
                     <div class="founders-image">
                         <img src="" alt="aditya-image">
                     </div>
                     <div class="founders-social-media">
                         <div class="text-tert text-lg pb-1">Co-founder</div>
-                        <div class="text-pri text-2xl font-bold">Aditya Shrivastav</div>
+                        <div class="text-pri sm:text-2xl text-xl font-bold">Aditya Shrivastav</div>
                         <div class="my-3">
                             <span><i class="fab fa-linkedin-in text-tert fa-lg mx-1"></i></span>
                             <span><i class="fab fa-instagram text-tert fa-lg mx-1"></i></span>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/2 text-center">
+                <div class="sm:w-1/2 w-full text-center">
                     <div class="founders-image">
                         <img src="" alt="advait-image">
                     </div>
                     <div class="founders-social-media">
                         <div class="text-tert text-lg pb-1">Co-founder</div>
-                        <div class="text-pri text-2xl font-bold">Advait Mulay</div>
+                        <div class="text-pri sm:text-2xl text-xl font-bold">Advait Mulay</div>
                         <div class="my-3">
                             <span><i class="fab fa-linkedin-in text-tert fa-lg mx-1"></i></span>
                             <span><i class="fab fa-instagram text-tert fa-lg mx-1"></i></span>
@@ -200,16 +215,16 @@
         <!-- It's all about the people Ends -->
 
         <!-- Drop us a line -->
-        <div class="container mx-auto lg:mt-32 sm:mt-24 mb-24" id="contact">
+        <div class="container mx-auto lg:mt-32 sm:mt-24 sm:mb-24 mb-12" id="contact">
             <div class="w-full">
-                <h1 class="lg:text-5xl sm:text-4xl text-center font-head font-extrabold text-pri my-16">
+                <h1 class="lg:text-5xl sm:text-4xl text-2xl text-center font-head font-extrabold text-pri my-16">
                     Drop us a line.
                 </h1>
             </div>
-            <div class="flex">
-                <div class="w-1/2 border-r-2 border-tert">
+            <div class="flex flex-wrap">
+                <div class="sm:w-1/2 w-full border-r-2 border-tert mb-6 sm:mb-0">
                     <div class="contact-info text-center">
-                        <div class="text-pri text-2xl font-bold mb-6">Aditya Shrivastav</div>
+                        <div class="text-pri sm:text-2xl text-xl font-bold sm:mb-6 mb:4">Aditya Shrivastav</div>
                         <div class="my-3 text-left w-64 mx-auto">
                             <div>
                                 <span><i class="far fa-envelope text-tert fa-lg mr-6 mb-4"></i></span>
@@ -222,9 +237,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/2">
+                <div class="sm:w-1/2 w-full">
                     <div class="contact-info text-center">
-                        <div class="text-pri text-2xl font-bold mb-6">Advait Mulay</div>
+                        <div class="text-pri sm:text-2xl text-xl font-bold sm:mb-6 mb:4">Advait Mulay</div>
                         <div class="my-3 text-left w-64 mx-auto">
                             <div>
                                 <span><i class="far fa-envelope text-tert fa-lg mr-6 mb-4"></i></span>
@@ -248,9 +263,11 @@
                     d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,64C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
                 </path>
             </svg>
-            <div class="flex justify-between px-12">
-                <div class="font-head font-extrabold text-3xl">Sk!ld</div>
-                <div class="text-lg font-body sm:pt-2 md:pt-0">Copyright <i class="far fa-copyright"></i> 2020 Sklld,
+            <div class="flex flex-wrap justify-between sm:px-12">
+                <div class="font-head font-extrabold text-3xl w-full text-center mb-3 sm:mb-0">Sk!ld</div>
+                <div class="sm:text-lg font-body px-5 sm:px-0 sm:pt-2 md:pt-0 w-full text-center">Copyright <i
+                        class="far fa-copyright"></i> 2020
+                    Sklld,
                     Inc. All
                     rights
                     reserved.
